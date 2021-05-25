@@ -42,15 +42,15 @@ Also after having created this environment, you can install additional packages 
 2. As next step, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
   2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
   2.b) Use your API key to make your first call to the Weather API for your chosen month/year and locations:    
-  
+    
   ```BASH 
 # 1. Create url with specified period of time and locations
 # 2. Example URL:
 url = "https://api.meteostat.net/v2/point/daily?lat=33.749&lon=-84.388&alt=336&start=2019-06-01&end=2019-06-02"
-# 2. Code for API request
+# 3. Code for API request
 r = requests.get(url, headers={'x-api-key': '{your_key'}). 
 ```
-
+  
   2.c) Access and extract these data from your JSON.  
   2.d) Flatten your nested JSON data and transform it into a DataFrame for your future analysis.  
 3. Make sure your tables can be joined on a related column and push the prepared data to a table in the database  
