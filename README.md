@@ -43,23 +43,23 @@ Also after having created this environment, you can install additional packages 
   2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
   2.b) Use your API key to make your first call to the Weather API for your chosen month/year and locations:    
     
-  ```BASH 
+````
 # 1. Create url with specified period of time and locations
 # 2. Example URL:
 url = "https://api.meteostat.net/v2/point/daily?lat=33.749&lon=-84.388&alt=336&start=2019-06-01&end=2019-06-02"
 # 3. Code for API request
-r = requests.get(url, headers={'x-api-key': '{your_key'}). 
-  ```
-  
+r = requests.get(url, headers={'x-api-key': '{your_key'})
+````
+
    2.c) Access and extract these data from your JSON.  
    2.d) Flatten your nested JSON data and transform it into a DataFrame for your future analysis.  
   
-3. Make sure your tables can be joined on a related column and push the prepared data to a table in the database  
+3. Make sure your tables can be joined on a related column and push the prepared data to a table in the database.    
 4. Make a basic EDA on both of the tables.  
 5. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have.  
 6. Make an EDA following your hypotheses.  
 
 ### Deliverables
 1. Clean and structured Jupyter Notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
-2. Presentation to the stakeholder, presenting the results of your data exploration, answering your hypotheses.
+2. Presentation to the stakeholder, presenting the results of your data exploration and answering your hypotheses.
 
