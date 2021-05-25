@@ -37,10 +37,10 @@ Also after having created this environment, you can install additional packages 
   1.a) As we did before in [this notebook](https://github.com/neuefische/da-sql_database_connection/blob/main/Connect_to_db_1.ipynb), download csv file containing flights data for a specific year and month from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).  
   1.b) Clean your data (e.g. specify which columns you want to keep, rename columns etc.) and make a basic EDA on the flights data you have downloaded.  
   1.c) Check which origin locations are included in your data. Choose three different of these locations and adapt your dataframe so that it only contains your location selection.
-2. In addition, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).  
-  2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).
-  2.b) Use your API key to make your first call to the Weather API for your chosen month/year and locations.  
-  - how to find the weather stations linked to your chosen locations is described [here](https://dev.meteostat.net/api/stations/search.html#endpoint).    
+2. In addition, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
+  2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
+  2.b) Use your API key to make your first call to the Weather API for your chosen month/year and locations.    
+  - How to find the weather stations linked to your chosen locations is described [here](https://dev.meteostat.net/api/stations/search.html#endpoint).    
   - [Here](https://dev.meteostat.net/api/stations/daily.html#endpoint) you can find instructions on how to get daily data for specific period of time.  
   2.c) Access and extract these data from your JSON.  
   2.d) Flatten your nested JSON data and transform it into a DataFrame for your future analysis.  
