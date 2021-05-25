@@ -1,16 +1,18 @@
 # SQL-API project
 
 It's project time again :tada:!  
-In this project you will combine use SQL, Python and API skills and use them in combination with each other.  
+In this project you will combine your SQL, Python and API skills and use them in combination with each other.  
 
 ## Objective
 As we have learned, the two main tools of Data Analysts are SQL and Python.  
 In the last lectures and exercises, you have learned how to use SQL, how to get data out of a database into a pandas dataframe and how to enrich your data with the help of APIs.
-This is what you should do now.
+And now you should do it altogether.
 
 
 ## Task 
-Airline wants to know h weather affects their flight delays.
+Airline wants to know if weather affects their flight delays.
+
+
 ### Setting-up working environment
 
 1. Fork and clone this repository
@@ -33,7 +35,7 @@ Also after having created this environment, you can install additional packages 
 ### Task description
 1. Set up a connection to the flights table in our SQL database and get all the data in a pandas dataframe.
 3. Enrich your flights data by historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint). 
-  2.a) Sign-up to the Meteostat API and use your API key to make your first call to the Weather API.  
+  2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net) and use your API key to make your first call to the Weather API.  
   2.b) Access and extract data from your JSON.  
   2.c) Flatten your nested JSON data and transform it into a DataFrame for your future analysis.  
 5. Make a basic EDA on both of the tables.
