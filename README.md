@@ -12,7 +12,7 @@ And now you should do it altogether.
 ## Task 
 The research center for aerospace you work for as Data Analyst wants to keep track of accumlated flights data in combination with weather data.  
 
-![](PIREPs-featured.jpg)  
+![](images/PIREPs-featured.jpg)  
 ### Setting-up working environment
 
 1. Fork and clone this repository
