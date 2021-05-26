@@ -29,7 +29,7 @@ $ conda install <package_name>
 Activate your environment. 
 Also after having created this environment, you can install additional packages within it. 
 
-3. Add your database.ini file from the SQL-Database connection-repo to this repo, without pushing it. 
+3. Add your database.ini and configdef.py file from the SQL-Database connection-repo to this repo, without pushing it. 
 4. Start jupyter lab.  
 
 ### Task description
