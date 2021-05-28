@@ -37,7 +37,7 @@ Also after having created this environment, you can install additional packages 
   1.a) As we did before in [this notebook](https://github.com/neuefische/da-sql_database_connection/blob/main/Connect_to_db_1.ipynb), download csv file containing flights data for a specific year and month from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).  
   1.b) Clean your data (e.g. specify which columns you want to keep, rename columns etc.) and make a basic EDA on the flights data you have downloaded.  
   1.c) Check which origin locations are included in your data.  
-  1.d) From the airports table of our database, look up the latitude and longitude correspondent to the origin locations of your dataset.  
+  1.d) From the airports table of our database, look up the latitude, longitude and altitude correspondent to the origin locations of your dataset.  
     
 2. As next step, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
   2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
