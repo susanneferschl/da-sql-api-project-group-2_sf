@@ -36,18 +36,19 @@ Also after having created this environment, you can install additional packages 
 1. Set up a connection to our SQL database & get data on flights.   
   1.a) As we did before in [this notebook](https://github.com/neuefische/da-sql_database_connection/blob/main/Connect_to_db_1.ipynb), download csv file containing flights data for a specific year and month from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).    
   1.b) Clean your data (e.g. specify which columns you want to keep, rename columns etc.).  
-  1.c) Reduce your dataframe to include only 5 origin airports (choose either big cities or locations from this [list of loactions](https://bulk.meteostat.net/v2/stations/lite.json.gz) with weather stations.   
-  1.d) Make a EDA on the flights data you have downloaded to explain what data you have and any unexpected findings.   
+  1.c) Reduce your dataframe to include only 5 origin airports (choose either big cities or locations from this [list of locations with weather stations](https://bulk.meteostat.net/v2/stations/lite.json.gz)).   
+  1.d) Make an EDA on the flights data you have downloaded to explain what data you have and any unexpected findings.   
   1.e) Join the data with the airports table of our database to get the latitude, longitude for the origin airports in your dataset.    
     
 2. As next step, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
   2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
-  2.b) Use your API key to make your first call to the Weather API for your chosen month/year and locations:    
+  2.b) Use your API key to make your first call to the Weather API for your chosen month/year and locations.  
+  Use the lat and lon information of your dataframe: "By default, Meteostat uses weighted averages as its interpolation method. This method utilizes the      geographical similarity of nearby weather stations and the provided point to weigh all available data and produce an aggregated output."   
     
 ````
 # 1. Create url with specified period of time and locations
 # 2. Example URL:
-url = "https://api.meteostat.net/v2/point/daily?lat=33.749&lon=-84.388&alt=336&start=2019-06-01&end=2019-06-02"
+url = "https://api.meteostat.net/v2/point/daily?lat=33.749&lon=-84.388&start=2019-06-01&end=2019-06-02"
 # 3. Code for API request
 r = requests.get(url, headers={'x-api-key': {'your_key'})
 ````
