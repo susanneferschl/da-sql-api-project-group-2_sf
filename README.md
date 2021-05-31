@@ -65,3 +65,5 @@ r = requests.get(url, headers={'x-api-key': {'your_key'})
 1. Clean and structured Jupyter Notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
 2. Presentation to the stakeholder, presenting the results of your data exploration and answering your hypotheses.
 
+
+**Keep in mind that your API calls are limited!**
