@@ -35,9 +35,10 @@ Also after having created this environment, you can install additional packages 
 ### Task description
 1. Set up a connection to our SQL database & get data on flights.   
   1.a) As we did before in [this notebook](https://github.com/neuefische/da-sql_database_connection/blob/main/Connect_to_db_1.ipynb), download csv file containing flights data for a specific year and month from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).  
-  1.b) Clean your data (e.g. specify which columns you want to keep, rename columns etc.) and make a basic EDA on the flights data you have downloaded.  
-  1.c) Check which origin locations are included in your data.  
-  1.d) From the airports table of our database, look up the latitude, longitude and altitude correspondent to the origin locations of your dataset.  
+  1.b) Clean your data (e.g. specify which columns you want to keep, rename columns etc.)  
+  1.c) Reduce your dataframe to include only 5 origin airports (choose either big cities or locations from this list of loactions with weather stations: https://dev.meteostat.net/bulk/stations.html / https://bulk.meteostat.net/v2/stations/lite.json.gz
+  1.d) Make a EDA on the flights data you have downloaded to explain what data you have and any unexpected findings. 
+  1.d) Join the data with the airports table of our database to get the latitude, longitude for the origin airports in your dataset.  
     
 2. As next step, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
   2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
@@ -56,8 +57,8 @@ r = requests.get(url, headers={'x-api-key': '{your_key'})
   
 3. Make sure your tables can be joined on a related column and push the prepared data to a table in the database.    
 4. Make a basic EDA on both of the tables.  
-5. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have.  
-6. Make an EDA following your hypotheses.  
+5. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have (perhaps linking dep_delay to weather).  
+6. Complete EDA following your hypotheses and clearly outline your findings (either that everything is as expected or any unexpected results).  
 
 ### Deliverables
 1. Clean and structured Jupyter Notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
