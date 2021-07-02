@@ -30,15 +30,21 @@ Activate your environment.
 Also after having created this environment, you can install additional packages within it. 
 
 3. Add your database.ini and configdef.py file from the SQL-Database connection-repo to this repo, without pushing it. 
-4. Start jupyter lab.  
+4. In order to avoid pushing notebooks containing your API key to GitHub, do the following:
+    - In the database.ini file, add the following section:
+    ```
+    [meteostat]
+    x-api-key=<add your api key here>
+    ```
+5. Start VS Code and open a notebook.  
 
 ### Task description
-1. Set up a connection to our SQL database & get data on flights.   
+1. Get data on flights & Set up a connection to our SQL database 
   1.a) As we did before in [this notebook](https://github.com/neuefische/da-sql_database_connection/blob/main/Connect_to_db_1.ipynb), download csv file containing flights data for a specific year and month from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).    
   1.b) Clean your data (e.g. specify which columns you want to keep, rename columns etc.).  
   1.c) Reduce your dataframe to include only 5 origin airports (choose either big cities or locations from this [list of locations with weather stations](https://bulk.meteostat.net/v2/stations/lite.json.gz)).   
   1.d) Make an EDA on the flights data you have downloaded to explain what data you have and any unexpected findings.   
-  1.e) Join the data with the airports table of our database to get the latitude, longitude for the origin airports in your dataset.    
+  1.e) Connect to database and join the data with the airports table of our database to get the latitude, longitude for the origin airports in your dataset.    
     
 2. As next step, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
   2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
@@ -50,20 +56,18 @@ Also after having created this environment, you can install additional packages 
 # 2. Example URL:
 url = "https://api.meteostat.net/v2/point/daily?lat=33.749&lon=-84.388&start=2019-06-01&end=2019-06-02"
 # 3. Code for API request
-r = requests.get(url, headers={'x-api-key': {'your_key'})
+r = requests.get(url,  headers=config(section='meteostat'))
 ````
-
-   2.c) Access and extract these data from your JSON.  
-   2.d) Flatten your nested JSON data and transform it into a DataFrame for your future analysis.  
+3. Flatten your nested JSON data and transform it into a DataFrame for your future analysis.    
+  Make sure your tables (flights data and weather data) can be joined on a related column.  
   
-3. Make sure your tables can be joined on a related column.    
 4. Make a basic EDA on both of the tables.  
-5. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have (perhaps linking dep_delay to weather).  
-6. Complete EDA following your hypotheses and clearly outline your findings (either that everything is as expected or any unexpected results).  
+  4.1) Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have (perhaps linking dep_delay to weather).  
+ 4.2) Complete EDA following your hypotheses and clearly outline your findings (either that everything is as expected or any unexpected results).  
 
 ### Deliverables
-1. Clean and structured Jupyter Notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
-2. Presentation to the stakeholder, presenting the results of your data exploration and answering your hypotheses.
+1. Clean and structured .ipynb Notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
+2. 10-minutes Presentation to the stakeholder, presenting the results of your data exploration and answering your hypotheses.
 
 
 **Keep in mind that your API calls are limited!**
