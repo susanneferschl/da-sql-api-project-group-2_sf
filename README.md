@@ -39,7 +39,7 @@ Also after having created this environment, you can install additional packages 
 5. Start VS Code and open a notebook.  
 
 ### Task description
-1. Get data on flights & Set up a connection to our SQL database 
+1. Get data on flights & Set up a connection to our SQL database.  
   1.a) As we did before in [this notebook](https://github.com/neuefische/da-sql_database_connection/blob/main/Connect_to_db_1.ipynb), download csv file containing flights data for a specific year and month from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).    
   1.b) Clean your data (e.g. specify which columns you want to keep, rename columns etc.).  
   1.c) Reduce your dataframe to include only 5 origin airports (choose either big cities or locations from this [list of locations with weather stations](https://bulk.meteostat.net/v2/stations/lite.json.gz)).   
