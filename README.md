@@ -42,21 +42,11 @@ Also after having created this environment, you can install additional packages 
   1.e) Connect to database and join the data with the airports table of our database to get the latitude, longitude for the origin airports in your dataset.    
     
 2. As next step, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
-  2.a) Sign-up to the Meteostat API [here](https://auth.meteostat.net).  
-  2.b) Use your API key to make your first call to the Weather API for your chosen month/year and locations.  
-  Use the lat and lon information of your dataframe: "By default, Meteostat uses weighted averages as its interpolation method. This method utilizes the      geographical similarity of nearby weather stations and the provided point to weigh all available data and produce an aggregated output."   
-    
-````
-# 1. Create url with specified period of time and locations
-# 2. Example URL:
-url = "https://api.meteostat.net/v2/point/daily?lat=33.749&lon=-84.388&start=2019-06-01&end=2019-06-02"
-# 3. Code for API request
-r = requests.get(url,  headers=config(section='meteostat'))
-````
-3. Flatten your nested JSON data and transform it into a DataFrame for your future analysis.    
-  Make sure your tables (flights data and weather data) can be joined on a related column.  
+  2.a) Follow the steps [here](https://dev.meteostat.net/api/) and sign-up to RapidAPI in ordet to get access to the Meteostat API  
+  2.b) Use your API key to get weather data for your chosen month/year and locations.
+3. If necessary flatten your JSON data and transform it into a DataFrame for future analysis. Make sure to have primary and foreign keys in order to join the weather data to your flights data.  
   
-4. Make a basic EDA on both of the tables.  
+4. Perform a basic EDA on both of the tables.  
   4.1) Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have (perhaps linking dep_delay to weather).  
  4.2) Complete EDA following your hypotheses and clearly outline your findings (either that everything is as expected or any unexpected results).  
 
