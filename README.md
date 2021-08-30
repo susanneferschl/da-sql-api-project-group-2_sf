@@ -29,13 +29,8 @@ $ conda install <package_name>
 Activate your environment. 
 Also after having created this environment, you can install additional packages within it. 
 
-3. Add your database.ini and configdef.py file from the SQL-Database connection-repo to this repo, without pushing it. 
-4. In order to avoid pushing notebooks containing your API key to GitHub, do the following:
-    - In the database.ini file, add the following section:
-    ```
-    [meteostat]
-    x-api-key=<add your api key here>
-    ```
+3. Add your sql.py file from the internal data notebooks.
+4. In order to avoid pushing notebooks containing your API key to GitHub, in the sql.py file, add you api_key as a variable. Then import this into your notebook as we have with other connection details.  
 5. Start VS Code and open a notebook.  
 
 ### Task description
