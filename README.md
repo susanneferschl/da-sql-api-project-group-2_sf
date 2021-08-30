@@ -41,10 +41,11 @@ Also after having created this environment, you can install additional packages 
   1.d) Make an EDA on the flights data you have downloaded to explain what data you have and any unexpected findings.   
   1.e) Connect to database and join the data with the airports table of our database to get the latitude, longitude for the origin airports in your dataset.    
     
-2. As next step, get historical weather data using the [meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
+2. As next step, get historical weather data using the [Meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
   2.a) Follow the steps [here](https://dev.meteostat.net/api/) and sign-up to RapidAPI in ordet to get access to the Meteostat API  
   2.b) Use your API key to get weather data for your chosen month/year and locations.
-3. If necessary flatten your JSON data and transform it into a DataFrame for future analysis. Make sure to have primary and foreign keys in order to join the weather data to your flights data.  
+  2.c) If necessary flatten your JSON data and transform it into a DataFrame for future analysis. 
+  2.d) Make sure to have primary and foreign keys so that it's possible to join the weather data to your flights data.  
   
 4. Perform a basic EDA on both of the tables.  
   4.1) Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have (perhaps linking dep_delay to weather).  
