@@ -16,7 +16,7 @@ The research center for aerospace you work for as Data Analyst wants to keep tra
 ### Setting-up working environment
 
 1. Fork and clone this repository
-2. Use your existing sql-practive environement or create your own project conda environment. Don't forget to install *sqlalchemy=1.3.23*, *psycopg2=2.8.6* as well as packages needed for doing some EDA and visualizations.  
+2. Use your existing sql-practice environement or create your own project conda environment. Don't forget to install *sqlalchemy=1.3.23*, *psycopg2=2.8.6* as well as packages needed for doing some EDA and visualizations.  
 
 ```BASH 
 # Create new environment
