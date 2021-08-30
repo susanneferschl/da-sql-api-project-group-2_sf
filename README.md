@@ -43,8 +43,8 @@ Also after having created this environment, you can install additional packages 
     
 2. As next step, get historical weather data using the [Meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
   2.a) Follow the steps [here](https://dev.meteostat.net/api/) and sign-up to RapidAPI in ordet to get access to the Meteostat API  
-  2.b) Use your API key to get weather data for your chosen month/year and locations.
-  2.c) If necessary flatten your JSON data and transform it into a DataFrame for future analysis. 
+  2.b) Use your API key to get weather data for your chosen month/year and locations.  
+  2.c) If necessary flatten your JSON data and transform it into a DataFrame for future analysis.  
   2.d) Make sure to have primary and foreign keys so that it's possible to join the weather data to your flights data.  
   
 4. Perform a basic EDA on both of the tables.  
