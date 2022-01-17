@@ -40,7 +40,7 @@ Also after having created this environment, you can install additional packages 
 2. Get data on flights & Set up a connection to our SQL database.  
   a. As described in [this notebook](https://github.com/neuefische/da-sql-api-project/blob/main/get_flights_data.ipynb), download csv file containing flights data for the specific years and months you need from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).    
   b. Clean your data (e.g. specify which columns you want to keep, rename columns etc.).  
-  c. Reduce your dataframe to include at least 5 origin airports (choose either big cities or locations from this [list of locations with weather stations](https://bulk.meteostat.net/v2/stations/lite.json.gz)).  You can expand your dataset to include more locations or destinations if this is helpful in your analysis.   
+  c. Reduce your dataframe to include at least 5 origin airports (choose either big cities or locations from this [list of locations with weather stations](https://bulk.meteostat.net/v2/stations/lite.json.gz)). You can expand your dataset to include more locations or destinations if this is helpful in your analysis.   
   d. Make an EDA on the flights data you have downloaded to explain what data you have and any unexpected findings.   
   e. Connect to database and join the data with the airports table of our database to get the latitude, longitude or city names for the airports in your dataset. 
   
