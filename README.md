@@ -35,7 +35,7 @@ Also after having created this environment, you can install additional packages 
 6. Open a new notebook in VS code.  
 
 ### Task steps
-1. Choose a historical weather event that occured in the United States sometime in the past 30 years that you believe would have led to the cacnellation of flights.
+1. Choose a historical weather event that occured in the United States sometime in the past 30 years that you believe would have led to the cancellation of flights.
 
 2. Get data on flights & Set up a connection to our SQL database.  
   a. As described in [this notebook](https://github.com/neuefische/da-sql-api-project/blob/main/get_flights_data.ipynb), download csv file containing flights data for the specific years and months you need from the [Bureau of Transportation Statistics website](https://transtats.bts.gov).    
