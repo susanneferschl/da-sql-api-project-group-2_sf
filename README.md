@@ -17,9 +17,9 @@ The Research Center for Aerospace (RSA) where you work for as Data Analyst wants
 
 1. Fork this repository in Github
 2. Open VS Code and a terminal window in VS Code
-3. Use your existing environment from our exercises or create a new conda environment for this project. Don't forget to install *sqlalchemy*, *psycopg2* as well as packages needed for doing some EDA and visualizations.  
+3. Use your existing environment from our exercises __or__ create a new conda environment for this project. Don't forget to install *sqlalchemy*, *psycopg2* as well as packages needed for doing some EDA and visualizations.  
 
-```BASH 
+```ZSH 
 # Create new environment
 $ conda create --name <env_name>
 # Activate environment 
@@ -30,8 +30,8 @@ $ conda install <package_name>
 Activate your environment. 
 Also after having created this environment, you can install additional packages within it. 
 
-4. Add your sql.py file from the internal data notebooks.
-5. In order to avoid pushing notebooks containing your API key to GitHub, in the sql.py file, add you api_key as a variable. Then import this into your notebook as we have with other connection details.  
+4. Add your sql.py file (and maybe your .env) from the external data sourcing notebooks.
+5. Check your .gitignore in order to avoid pushing credentials to GitHub.  
 6. Open a new notebook in VS code.  
 
 ### Task steps
