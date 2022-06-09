@@ -15,24 +15,27 @@ The Research Center for Aerospace (RSA) where you work for as Data Analyst wants
 ![](images/PIREPs-featured.jpg)  
 ### Setting-up working environment
 
-1. Fork this repository in Github
+1. Fork this repository in Github - but: team members work best on one repository collaboratively. 
 2. Open VS Code and a terminal window in VS Code
-3. Use your existing environment from our exercises __or__ create a new conda environment for this project. Don't forget to install *sqlalchemy*, *psycopg2* as well as packages needed for doing some EDA and visualizations.  
+3. It's up to you: **Use your existing nf_sql environment** from our exercises __or(!)__ create a new conda environment for this project. In both cases you can install any additional packages needed for doing some EDA and visualizations.  
 
 ```ZSH 
-# Create new environment
-$ conda create --name <env_name>
+# Create new environment, eg.:
+conda create --clone nf_sql --name <your_env_name>
 # Activate environment 
-$ conda activate <env_name>
+$ conda activate <your_env_name>
 # Installing packages 
 $ conda install <package_name>
 ```
-Activate your environment. 
-Also after having created this environment, you can install additional packages within it. 
+Activate your environment.  
 
-4. Add your sql.py file (and maybe your .env) from the external data sourcing notebooks.
+4. Add your sql_functions.py file (and maybe your .env) from the external data sourcing notebooks:
+```zsh
+$ cp ../da-external-data-sourcing/.env .
+$ cp ../da-external-data-sourcing/sql_functions.py .
+```
 5. Check your .gitignore in order to avoid pushing credentials to GitHub.  
-6. Open a new notebook in VS code.  
+6. Open one or more new notebook(s) in VS Code to work in.  
 
 ### Task steps
 1. Choose a historical weather event that occured in the United States sometime in the past 30 years that you believe would have led to the cancellation of flights.
@@ -55,8 +58,10 @@ Also after having created this environment, you can install additional packages 
   b. Complete EDA following your hypotheses and clearly outline your findings (either that everything is as expected or any unexpected results).  
 
 ### Deliverables
-1. Clean and structured .ipynb Notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
-2. 10-minutes technical presentation to your colleagues, presenting the results of your data exploration and answering your hypotheses.
+1. Clean and structured .ipynb notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
+2. ~10-minutes technical presentation (eg. via google slides) to your colleagues, presenting the results of your data exploration and answering your hypotheses.
 
 
-**Keep in mind that your API calls are limited!**
+**And:**  
+**Keep in mind that your API calls are limited!**  
+**When possible, separate code calling the API from other code working on the data.**
