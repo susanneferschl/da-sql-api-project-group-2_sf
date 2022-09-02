@@ -48,14 +48,15 @@ $ cp ../da-external-data-sourcing/sql_functions.py .
   e. Connect to database and join the data with the airports table of our database to get the latitude, longitude or city names for the airports in your dataset. 
   
 3. As next step, get historical weather data using the [Meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
-  a. Follow the steps [here](https://dev.meteostat.net/api/) and sign-up to RapidAPI in ordet to get access to the Meteostat API  
-  b. Use your API key to get weather data for your chosen month/year and locations.  
-  c. If necessary flatten your JSON data and transform it into a DataFrame for future analysis.  
-  d. Make sure to have primary and foreign keys so that it's possible to join the weather data to your flights data.  
+  a. Follow the steps [here](https://dev.meteostat.net/api/) and sign-up to RapidAPI in ordet to get access to the Meteostat API
+  b. Read the docs to find out what the call limits are for this API. Ensure your data retrieval needs (including testing) fit within these limits.
+  c. Use your API key to get weather data for your chosen month/year and locations.  
+  d. If necessary flatten your JSON data and transform it into a DataFrame for future analysis.  
+  e. Make sure to have primary and foreign keys so that it's possible to join the weather data to your flights data.  
   
 4. Perform a basic EDA on both of the tables.  
-  a. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have (perhaps linking dep_delay to weather).  
-  b. Complete EDA following your hypotheses and clearly outline your findings (either that everything is as expected or any unexpected results).  
+  a. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have. You should start with asking these questions: "Can we see the weather event in the weather data?", "Can we see the weather event in the flights data?", "Can we see a correllation between the data".
+  b. Perform more complex EDA, following up on your hypotheses (perhaps linking dep_delay to weather) and clearly outlining your findings (either that everything is as expected or any unexpected results).  
 
 ### Deliverables
 1. Clean and structured .ipynb notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
