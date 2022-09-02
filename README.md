@@ -48,8 +48,8 @@ $ cp ../da-external-data-sourcing/sql_functions.py .
   e. Connect to database and join the data with the airports table of our database to get the latitude, longitude or city names for the airports in your dataset. 
   
 3. As next step, get historical weather data using the [Meteostat API](https://dev.meteostat.net/api/point/daily.html#endpoint).   
-  a. Follow the steps [here](https://dev.meteostat.net/api/) and sign-up to RapidAPI in ordet to get access to the Meteostat API
-  b. Read the docs to find out what the call limits are for this API. Ensure your data retrieval needs (including testing) fit within these limits.
+  a. Follow the steps [here](https://dev.meteostat.net/api/) and sign-up to RapidAPI in ordet to get access to the Meteostat API  
+  b. Read the docs to find out what the call limits are for this API. Ensure your data retrieval needs (including testing) fit within these limits.  
   c. Use your API key to get weather data for your chosen month/year and locations.  
   d. If necessary flatten your JSON data and transform it into a DataFrame for future analysis.  
   e. Make sure to have primary and foreign keys so that it's possible to join the weather data to your flights data.  
