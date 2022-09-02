@@ -56,7 +56,7 @@ $ cp ../da-external-data-sourcing/sql_functions.py .
   
 4. Perform a basic EDA on both of the tables.  
   a. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have. You should start with asking these questions: "Can we see the weather event in the weather data?", "Can we see the weather event in the flights data?", "Can we see a correllation between the data".  
-  b. Perform more complex EDA, following up on your hypotheses (perhaps linking dep_delay to weather) and clearly outlining your findings (either that everything is as expected or any unexpected results).  
+  b. Go deeper into your hypotheses (perhaps linking dep_delay to weather) and clearly outline your findings (either that everything is as expected or any unexpected results).  
 
 ### Deliverables
 1. Clean and structured .ipynb notebook containing the (well-documented) code to connect to database as well as API as well as the required EDA part.
