@@ -55,7 +55,7 @@ $ cp ../da-external-data-sourcing/sql_functions.py .
   e. Make sure to have primary and foreign keys so that it's possible to join the weather data to your flights data.  
   
 4. Perform a basic EDA on both of the tables.  
-  a. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have. You should start with asking these questions: "Can we see the weather event in the weather data?", "Can we see the weather event in the flights data?", "Can we see a correllation between the data".
+  a. Come up with three different hypotheses regarding your available data, taking into account both of the datasets you have. You should start with asking these questions: "Can we see the weather event in the weather data?", "Can we see the weather event in the flights data?", "Can we see a correllation between the data".  
   b. Perform more complex EDA, following up on your hypotheses (perhaps linking dep_delay to weather) and clearly outlining your findings (either that everything is as expected or any unexpected results).  
 
 ### Deliverables
