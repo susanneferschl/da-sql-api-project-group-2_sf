@@ -33,8 +33,6 @@ def get_data(query):
     return results.fetchall()
 # Insert the get_dataframe() function definition below - do this only when instructed in the notebook
 def get_dataframe(sql_query):
-   
-    from project_work.sql_functions import get_sql_config
     sql_config = get_sql_config()
     # create a connection engine to the PostgreSQL server
     engine = sqlalchemy.create_engine('postgresql://user:pass@host/database',
